@@ -1,0 +1,8 @@
+/.vscode
+/beerme/www/__pycache__/
+.env
+.beerenv/
+beerme/beerme/__pycache__/
+
+beerme/www/migrations/
+
