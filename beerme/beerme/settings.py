@@ -110,11 +110,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+TIME_ZONE = "America/Detroit"
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False  # watch this one
 
 
 # Static files (CSS, JavaScript, Images)

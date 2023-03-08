@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"python.terminal.activateEnvInCurrentTerminal": true,
+		"python.defaultInterpreterPath": "C:/Users/me/VsCodeProjects/BeerMeV3/.beerenv/Scripts/python.exe",
+	}
+}
