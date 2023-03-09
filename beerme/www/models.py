@@ -25,8 +25,11 @@ class Person(base):
     def __str__(self) -> str:
         return self.name
 
+    class Meta:
+        ordering = ["name"]
 
-@admin.display(ordering="name")
+
+# @admin.display(ordering="name")
 class Track(base):
     name = models.CharField(max_length=32, default="", unique=True)
     web_site = models.URLField(max_length=128, null=True, unique=True)
@@ -68,8 +71,13 @@ class Race(base):
     tv_id = models.ForeignKey(Tv, on_delete=models.CASCADE, null=True)
     web_site = models.URLField(max_length=128, null=True, unique=True)
 
+    def track_web_site(self):
+        # print("...................OK")
+        web = Track.objects.filter(id=self.track_id.id)
+        return web[0].web_site
+
     def __str__(self) -> str:
-        return f"{self.race_date} - {self.track_id} - {self.tv_id}"
+        return f"{self.race_date} - {self.track_id} - {self.tv_id} - {self.www()}"
 
     class Meta:
         ordering = ["race_date"]

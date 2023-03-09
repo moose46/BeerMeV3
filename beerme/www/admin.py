@@ -11,8 +11,8 @@ class RaceAdmin(admin.ModelAdmin):
     #         kwargs["queryset"] = Foo.objects.filter(title__isnull=False)
     #     return super(RaceAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
     list_filter = ["tv_id"]
-    list_display = ["race_date", "track_id", "tv_id", "web_site"]
-    list_display_links = ["track_id"]
+    list_display = ["race_date", "track_id", "tv_id", "track_web_site"]
+    list_display_links = ["track_id", "track_web_site"]
 
 
 class BetAdmin(admin.ModelAdmin):
@@ -23,6 +23,7 @@ class BetAdmin(admin.ModelAdmin):
         "driver_id",
         "finish",
     ]
+    ordering = ["race_id"]
 
 
 class DriverAdmin(admin.ModelAdmin):
