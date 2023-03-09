@@ -1,7 +1,7 @@
 import os
 from django import setup
 from django.db import models
-
+from django.contrib import admin
 from django.contrib.auth.models import User
 import datetime as dt
 from django.utils import timezone
@@ -26,9 +26,10 @@ class Person(base):
         return self.name
 
 
+@admin.display(ordering="name")
 class Track(base):
     name = models.CharField(max_length=32, default="", unique=True)
-    web_site = models.URLField(max_length=128)
+    web_site = models.URLField(max_length=128, null=True, unique=True)
 
     def __str__(self) -> str:
         return f"{self.name:<32}"
@@ -36,6 +37,7 @@ class Track(base):
 
 class Team(base):
     name = models.CharField(max_length=32, default="", unique=True)
+    web_site = models.URLField(max_length=128, null=True, unique=True)
 
     def __str__(self) -> str:
         return self.name
@@ -43,6 +45,7 @@ class Team(base):
 
 class Driver(base):
     name = models.CharField(max_length=32, default="", unique=True)
+    web_site = models.URLField(max_length=128, null=True, unique=True)
     team_id = models.ForeignKey(Team, models.CASCADE, default=-1)
 
     def __str__(self) -> str:
@@ -63,6 +66,7 @@ class Race(base):
     track_id = models.ForeignKey(Track, on_delete=models.CASCADE, default=-1)
     race_date = models.DateField(default=dt.date.today, unique=True)
     tv_id = models.ForeignKey(Tv, on_delete=models.CASCADE, null=True)
+    web_site = models.URLField(max_length=128, null=True, unique=True)
 
     def __str__(self) -> str:
         return f"{self.race_date} - {self.track_id} - {self.tv_id}"
