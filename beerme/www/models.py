@@ -92,11 +92,20 @@ class WeeklyBets:
     def __init__(self, prace_id: str) -> None:
         self.race_date = prace_id
         self.oneBet = Bet.objects.filter(race_id=prace_id)
-        print(self.oneBet)
+        # print(self.oneBet)
 
-    def winner(self):
-        if self.oneBet.count() == 2:
-            return self.oneBet.count()
+    def pick_the_winner(self):
+        # winner = self.oneBet[0]
+        for i in self.oneBet:
+            x = i
+            if self.oneBet[0].finish > self.oneBet[1].finish:
+                winner = self.oneBet[1]
+                winner.beer = True
+            else:
+                winner = self.oneBet[0]
+                winner.beer = True
+        # print(f"winner 1 = {winner}")
+        return winner
 
     def __str__(self) -> str:
         return self.oneBet

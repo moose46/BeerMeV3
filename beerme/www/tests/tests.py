@@ -61,7 +61,7 @@ class BetTest(TestCase):
         # x.beer = True
         # x.save()
         oneBet = Bet.objects.all()
-        print(f"db={oneBet.count()}")
+        # print(f"db={oneBet.count()}")
         self.assertTrue(oneBet.count() == 0)
 
     def test_tv(self):
@@ -95,7 +95,7 @@ class BetTest(TestCase):
         )
         bets = Bet.objects.all()
         week = WeeklyBets(race)
-        self.assertEqual(week.winner(), 2)
+        self.assertEqual(week.pick_the_winner().person_id.name, "Bob")
 
 
 # if __name__ == "__main__":
