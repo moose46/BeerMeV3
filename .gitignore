@@ -1,10 +1,13 @@
 /.vscode
 /beerme/www/__pycache__/
 .env
-.beerenv/
+.beerme3/
 beerme/beerme/__pycache__/
 
 beerme/www/migrations/
 
 beerme/www/tests/__pycache__/__init__.cpython-311.pyc
 beerme/www/tests/__pycache__/tests.cpython-311.pyc
+.beerme3/pyvenv.cfg
+beerme/www/tests/__pycache__/__init__.cpython-39.pyc
+beerme/www/tests/__pycache__/tests.cpython-39.pyc

@@ -28,6 +28,7 @@ class Person(base):
 
 class Track(base):
     name = models.CharField(max_length=32, default="", unique=True)
+    web_site = models.URLField(max_length=128)
 
     def __str__(self) -> str:
         return f"{self.name:<32}"
