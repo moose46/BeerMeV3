@@ -11,3 +11,6 @@ beerme/www/tests/__pycache__/tests.cpython-311.pyc
 beerme/www/tests/__pycache__/__init__.cpython-39.pyc
 beerme/www/tests/__pycache__/tests.cpython-39.pyc
 beerme/www/migrations/__pycache__/
+.beerenv/pyvenv.cfg
+.beerenv/
+

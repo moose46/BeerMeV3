@@ -11,9 +11,9 @@ from django.utils import timezone
 
 class base(models.Model):
     now = timezone.datetime
-    createdAt = models.DateTimeField("date created", auto_now=True, null=True)
+    createdAt = models.DateTimeField("date created", auto_now_add=True, null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
-    updatedAt = models.DateTimeField("date last updated", auto_now_add=True, null=True)
+    updatedAt = models.DateTimeField("date last updated", auto_now=True, null=True)
 
     class Meta:
         abstract = True
@@ -77,7 +77,7 @@ class Race(base):
         return web[0].web_site
 
     def __str__(self) -> str:
-        return f"{self.race_date} - {self.track_id} - {self.tv_id} - {self.www()}"
+        return f"{self.race_date} - {self.track_id} - {self.tv_id}"
 
     class Meta:
         ordering = ["race_date"]
