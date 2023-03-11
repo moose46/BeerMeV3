@@ -54,6 +54,9 @@ class Driver(base):
     def __str__(self) -> str:
         return f"{self.name:32} - Team {self.team_id}"
 
+    def driver_web_site(self):
+        return f"<a href={self.web_site}>{self.name}</a>"
+
     class Meta:
         ordering = ["name"]
 

@@ -27,7 +27,7 @@ class BetAdmin(admin.ModelAdmin):
 
 
 class DriverAdmin(admin.ModelAdmin):
-    list_display = ["name", "web_site"]
+    list_display = ["name", "driver_web_site"]
 
 
 class TeamAdmin(admin.ModelAdmin):
