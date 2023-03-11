@@ -5,6 +5,7 @@ from django.contrib import admin
 from django.contrib.auth.models import User
 import datetime as dt
 from django.utils import timezone
+from django.utils.html import format_html
 
 # Create your models here.
 
@@ -34,6 +35,14 @@ class Track(base):
     name = models.CharField(max_length=32, default="", unique=True)
     web_site = models.URLField(max_length=128, null=True, unique=True)
 
+    @admin.display(description="Web Site")
+    def www_link(self):
+        return format_html(
+            '<a style="color: green"; target="blank_" href={}>{}</a>',
+            self.web_site,
+            self.web_site,
+        )
+
     def __str__(self) -> str:
         return f"{self.name:<32}"
 
@@ -41,6 +50,14 @@ class Track(base):
 class Team(base):
     name = models.CharField(max_length=32, default="", unique=True)
     web_site = models.URLField(max_length=128, null=True, unique=True)
+
+    @admin.display(description="Web Site")
+    def www_link(self):
+        return format_html(
+            '<a style="color: green"; target="blank_" href={}>{}</a>',
+            self.web_site,
+            self.web_site,
+        )
 
     def __str__(self) -> str:
         return self.name
@@ -50,6 +67,14 @@ class Driver(base):
     name = models.CharField(max_length=32, default="", unique=True)
     web_site = models.URLField(max_length=128, null=True, unique=True)
     team_id = models.ForeignKey(Team, models.CASCADE, default=-1)
+
+    @admin.display(description="Web Site")
+    def www_link(self):
+        return format_html(
+            '<a style="color: green"; target="blank_" href={}>{}</a>',
+            self.web_site,
+            self.web_site,
+        )
 
     def __str__(self) -> str:
         return f"{self.name:32} - Team {self.team_id}"
@@ -73,6 +98,14 @@ class Race(base):
     race_date = models.DateField(default=dt.date.today, unique=True)
     tv_id = models.ForeignKey(Tv, on_delete=models.CASCADE, null=True)
     web_site = models.URLField(max_length=128, null=True, unique=True)
+
+    @admin.display(description="Web Site")
+    def www_link(self):
+        return format_html(
+            '<a style="color: green"; target="blank_" href={}>{}</a>',
+            self.web_site,
+            self.web_site,
+        )
 
     def track_web_site(self):
         # print("...................OK")
