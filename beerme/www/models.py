@@ -4,6 +4,7 @@ from django.db import models
 from django.contrib import admin
 from django.contrib.auth.models import User
 import datetime as dt
+from datetime import timedelta
 from django.utils import timezone
 from django.utils.html import format_html
 
@@ -99,13 +100,29 @@ class Race(base):
     tv_id = models.ForeignKey(Tv, on_delete=models.CASCADE, null=True)
     web_site = models.URLField(max_length=128, null=True, unique=True)
 
+    @admin.display
+    def track_name(self):
+        # race_completed = Race.objects.filter(id=self.track_id.id)
+        print(f"-------------- {self.race_date} {dt.datetime.now().date()}")
+        if self.race_date < dt.datetime.now().date():
+            return format_html('<span style="color: red">{}</span>', self.track_id)
+        else:
+            return self.track_id
+
     @admin.display(description="Web Site")
     def www_link(self):
-        return format_html(
-            '<a style="color: green"; target="blank_" href={}>{}</a>',
-            self.web_site,
-            self.web_site,
-        )
+        if self.race_date < dt.datetime.now().date():
+            return format_html(
+                '<a style="color: red"; target="blank_" href={}>{}</a>',
+                self.track_web_site(),
+                self.track_id,
+            )
+        else:
+            return format_html(
+                '<a style="color: green"; target="blank_" href={}>{}</a>',
+                self.track_web_site(),
+                self.track_id,
+            )
 
     def track_web_site(self):
         # print("...................OK")
