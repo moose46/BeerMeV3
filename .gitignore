@@ -14,3 +14,6 @@ beerme/www/migrations/__pycache__/
 .beerenv/pyvenv.cfg
 .beerenv/
 
+files_log.txt
+beerme/www/results/__pycache__/__init__.cpython-311.pyc
+beerme/www/results/load_results.py
