@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Team, Driver, Track, Race, Person, Bet, Tv
+from .models import Team, Driver, Track, Race, Person, Bet, Tv, CrewChief
 
 # Register your models here.
 
@@ -30,8 +30,12 @@ class BetAdmin(admin.ModelAdmin):
     ordering = ["race_id"]
 
 
+class CrewChiefAdmin(admin.ModelAdmin):
+    list_display = ["name", "team_id"]
+
+
 class DriverAdmin(admin.ModelAdmin):
-    list_display = ["name", "www_link"]
+    list_display = ["name", "team_id", "crew_chief_id", "www_link"]
 
 
 class TeamAdmin(admin.ModelAdmin):
@@ -51,3 +55,4 @@ admin.site.register(Race, RaceAdmin)
 admin.site.register(Person)
 admin.site.register(Tv)
 admin.site.register(Bet, BetAdmin)
+admin.site.register(CrewChief, CrewChiefAdmin)

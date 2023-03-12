@@ -7,6 +7,7 @@ import datetime as dt
 from datetime import timedelta
 from django.utils import timezone
 from django.utils.html import format_html
+import string
 
 # Create your models here.
 
@@ -64,10 +65,19 @@ class Team(base):
         return self.name
 
 
+class CrewChief(base):
+    name = models.CharField(max_length=64, default="???", unique=True)
+    team_id = models.ForeignKey(Team, on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return string.capwords(self.name)
+
+
 class Driver(base):
     name = models.CharField(max_length=32, default="", unique=True)
     web_site = models.URLField(max_length=128, null=True, unique=True)
     team_id = models.ForeignKey(Team, models.CASCADE, default=-1)
+    crew_chief_id = models.ForeignKey(CrewChief, on_delete=models.CASCADE, null=True)
 
     @admin.display(description="Web Site")
     def www_link(self):
@@ -91,7 +101,7 @@ class Tv(base):
     name = models.CharField(max_length=24, default="FOX", null=True, unique=True)
 
     def __str__(self) -> str:
-        return self.name
+        return self.name.upper()
 
 
 class Race(base):
