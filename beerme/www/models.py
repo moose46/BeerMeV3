@@ -148,8 +148,14 @@ class Race(Base):
         ordering = ["race_date"]
 
 
+# https://docs.djangoproject.com/en/dev/ref/models/options/#unique-together
 class Result(Base):
     race_id = models.ForeignKey(Race, on_delete=models.CASCADE, null=True)
+    driver_id = models.ForeignKey(Driver, on_delete=models.CASCADE, null=True)
+    finished = models.IntegerField(default=-1)
+
+    class Meta:
+        unique_together = ("race_id", "driver_id", "finished")
 
 
 class Bet(Base):
