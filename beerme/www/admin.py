@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Team, Driver, Track, Race, Person, Bet, Tv, CrewChief
+from .models import Team, Driver, Track, Race, Person, Bet, Tv, CrewChief, Result
 
 # Register your models here.
 
@@ -54,5 +54,6 @@ admin.site.register(Track, TrackAdmin)
 admin.site.register(Race, RaceAdmin)
 admin.site.register(Person)
 admin.site.register(Tv)
+admin.site.register(Result)
 admin.site.register(Bet, BetAdmin)
 admin.site.register(CrewChief, CrewChiefAdmin)
