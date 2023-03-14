@@ -23,6 +23,7 @@ class Base(models.Model):
         # app_label = "beerme"
 
 
+@admin.display(description="Your Name")
 class Person(Base):
     name = models.CharField(max_length=32, default="")
 
@@ -31,6 +32,7 @@ class Person(Base):
 
     class Meta:
         ordering = ["name"]
+        verbose_name = "Player"
         # app_label = "beerme"
 
 
@@ -66,6 +68,9 @@ class Team(Base):
     def __str__(self) -> str:
         return self.name
 
+    class Meta:
+        ordering = ["name"]
+
 
 class CrewChief(Base):
     name = models.CharField(max_length=64, default="???", unique=True)
@@ -74,11 +79,14 @@ class CrewChief(Base):
     def __str__(self):
         return string.capwords(self.name)
 
+    class Meta:
+        ordering = ["name"]
+
 
 class Driver(Base):
     name = models.CharField(max_length=32, default="", unique=True)
     web_site = models.URLField(max_length=128, null=True, unique=True)
-    team_id = models.ForeignKey(Team, models.CASCADE, default=-1)
+    team_id = models.ForeignKey(Team, models.CASCADE, null=True)
     crew_chief_id = models.ForeignKey(CrewChief, on_delete=models.CASCADE, null=True)
 
     @admin.display(description="Web Site")
@@ -111,6 +119,7 @@ class Race(Base):
     race_date = models.DateField(default=dt.date.today, unique=True)
     tv_id = models.ForeignKey(Tv, on_delete=models.CASCADE, null=True)
     web_site = models.URLField(max_length=128, null=True, unique=True)
+    nascar_web_site = models.URLField(max_length=128, null=True, unique=True)
 
     @admin.display
     def track_name(self):
@@ -136,6 +145,16 @@ class Race(Base):
                 self.track_id,
             )
 
+    def www_nascar(self):
+        if self.nascar_web_site:
+            return format_html(
+                '<a style="color: red"; target="blank_" href={}>{}</a>',
+                self.nascar_web_site,
+                "See Results",
+            )
+        else:
+            return "Not Entered"
+
     def track_web_site(self):
         # print("...................OK")
         web = Track.objects.filter(id=self.track_id.id)
@@ -154,8 +173,12 @@ class Result(Base):
     driver_id = models.ForeignKey(Driver, on_delete=models.CASCADE, null=True)
     finished = models.IntegerField(default=-1)
 
+    def __str__(self):
+        return f"{self.race_id} {self.driver_id} {self.finished}"
+
     class Meta:
         unique_together = ("race_id", "driver_id", "finished")
+        ordering = ["race_id", "finished"]
 
 
 class Bet(Base):
@@ -197,9 +220,3 @@ class WeeklyBets(Base):
 
     def __str__(self) -> str:
         return self.oneBet
-
-
-if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "beerme.settings")
-
-    WeeklyBets(3)
