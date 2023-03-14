@@ -1,25 +1,8 @@
 /.vscode
-/beerme/www/__pycache__/
 .env
 .beerme3/
-beerme/beerme/__pycache__/
-
 beer - Copy*
-beerme/www/tests/__pycache__/__init__.cpython-311.pyc
-beerme/www/tests/__pycache__/tests.cpython-311.pyc
-.beerme3/pyvenv.cfg
-beerme/www/tests/__pycache__/__init__.cpython-39.pyc
-beerme/www/tests/__pycache__/tests.cpython-39.pyc
-beerme/www/migrations/__pycache__/
-.beerenv/pyvenv.cfg
+pyvenv.cfg
 .beerenv/
-
+*.pyc
 files_log.txt
-beerme/www/results/__pycache__/__init__.cpython-311.pyc
-beerme/www/results/load_results.py
-beerme/www/management/commands/__pycache__/load_results.cpython-311.pyc
-beerme/www/management/commands/__pycache__/__init__.cpython-311.pyc
-beerme/www/management/__pycache__/__init__.cpython-311.pyc
-beerme/www/commands/load_results.py
-beerme/www/commands/__pycache__/__init__.cpython-311.pyc
-beerme/www/commands/
