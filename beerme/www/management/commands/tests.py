@@ -15,7 +15,7 @@ import os
 from django import setup
 from django.conf import settings
 from django.contrib.auth.models import User
-from ..models import WeeklyBets, Bet, Tv, Track, Person, Team, Driver, Race
+from ...models import WeeklyBets, Bet, Tv, Track, Person, Team, Driver, Race
 
 # Create your tests here.
 

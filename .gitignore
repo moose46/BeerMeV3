@@ -17,3 +17,9 @@ beerme/www/migrations/__pycache__/
 files_log.txt
 beerme/www/results/__pycache__/__init__.cpython-311.pyc
 beerme/www/results/load_results.py
+beerme/www/management/commands/__pycache__/load_results.cpython-311.pyc
+beerme/www/management/commands/__pycache__/__init__.cpython-311.pyc
+beerme/www/management/__pycache__/__init__.cpython-311.pyc
+beerme/www/commands/load_results.py
+beerme/www/commands/__pycache__/__init__.cpython-311.pyc
+beerme/www/commands/
