@@ -220,3 +220,12 @@ class WeeklyBets(Base):
 
     def __str__(self) -> str:
         return self.oneBet
+
+
+class Cooler(Base):
+    person_id = models.ForeignKey(Person, on_delete=models.CASCADE, null=True)
+    race_id = models.ForeignKey(Race, on_delete=models.CASCADE, null=True)
+    beer = models.IntegerField(default=0)
+
+    def __str__(self) -> str:
+        return self.beer
