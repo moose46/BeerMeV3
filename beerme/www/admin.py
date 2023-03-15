@@ -1,6 +1,17 @@
 from django.contrib import admin
 
-from .models import Team, Driver, Track, Race, Person, Bet, Tv, CrewChief, Result
+from .models import (
+    Team,
+    Driver,
+    Track,
+    Race,
+    Person,
+    Bet,
+    Tv,
+    CrewChief,
+    Result,
+    HistoricalData,
+)
 
 # Register your models here.
 
@@ -57,12 +68,18 @@ class ResultAdmin(admin.ModelAdmin):
     list_filter = ["race_id"]
 
 
+class HistoricalDataAdmin(admin.ModelAdmin):
+    list_display = ["name", "www_link"]
+    list_filter = ["track_id"]
+
+
 admin.site.register(Team, TeamAdmin)
 admin.site.register(Driver, DriverAdmin)
 admin.site.register(Track, TrackAdmin)
 admin.site.register(Race, RaceAdmin)
 admin.site.register(Person)
 admin.site.register(Tv)
+admin.site.register(HistoricalData, HistoricalDataAdmin)
 admin.site.register(Result, ResultAdmin)
 admin.site.register(Bet, BetAdmin)
 admin.site.register(CrewChief, CrewChiefAdmin)

@@ -12,6 +12,7 @@ https://djangocentral.com/environment-variables-in-django/
 
 """
 
+import os
 from pathlib import Path
 import environ
 
@@ -122,7 +123,9 @@ USE_TZ = False  # watch this one
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]  # new
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

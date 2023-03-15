@@ -1,0 +1,45 @@
+id,createdAt,updatedAt,name,user_id,web_site,crew_chief_id_id,team_id_id
+1,2023-03-09 09:35:19.976830,2023-03-12 10:52:48.815607,Joey Logano,1,https://www.nascar.com/drivers/joey-logano,4,1
+2,2023-03-09 09:38:26.790247,2023-03-12 10:53:29.780915,Kyle Busch,1,https://www.nascar.com/drivers/kyle-busch,3,3
+3,2023-03-09 09:38:49.589034,2023-03-12 10:34:17.805659,Kyle Larson,1,https://www.nascar.com/drivers/kyle-larson,1,4
+4,2023-03-09 09:37:40.764607,2023-03-12 10:40:26.839928,Ryan Blaney,1,https://www.nascar.com/drivers/ryan-blaney,2,1
+5,2023-03-13 08:53:22.623433,2023-03-13 08:53:22.623433,William Byron,1,https://www.espn.com/racing/driver/_/id/4721/william-byron,5,4
+7,2023-03-13 12:45:03.494563,2023-03-13 12:45:03.494563,,1,NULL,NULL,NULL
+8,2023-03-13 13:00:54.592286,2023-03-13 13:49:03.955622,Tyler Reddick,1,https://www.nascar.com/drivers/tyler-reddick,8,5
+9,2023-03-13 13:00:54.601286,2023-03-13 13:54:21.320421,Kevin Harvick,1,https://www.nascar.com/drivers/kevin-harvick,10,6
+10,2023-03-13 13:00:54.610287,2023-03-13 13:59:29.330528,Christopher Bell,1,https://www.nascar.com/drivers/christopher-bell,11,2
+11,2023-03-13 13:00:54.618287,2023-03-13 14:01:00.488973,Chase Briscoe,1,https://www.nascar.com/drivers/chase-briscoe,12,6
+12,2023-03-13 13:00:54.627286,2023-03-13 13:45:27.494122,Alex Bowman,1,https://www.nascar.com/drivers/alex-bowman,7,4
+13,2023-03-13 13:00:54.635287,2023-03-13 14:07:50.405115,Josh Berry,1,https://www.nascar.com/drivers/josh-berry/,6,8
+14,2023-03-13 13:00:54.644290,2023-03-13 15:03:17.298623,Ryan Preece,1,https://www.nascar.com/drivers/ryan-preece,35,6
+15,2023-03-13 13:00:54.653290,2023-03-13 15:02:14.050303,Michael McDowell,1,https://www.nascar.com/drivers/michael-mcdowell,34,15
+16,2023-03-13 13:00:54.660798,2023-03-13 13:51:14.305697,Bubba Wallace,1,https://www.nascar.com/drivers/bubba-wallace,9,5
+17,2023-03-13 13:00:54.669796,2023-03-13 14:10:11.675114,Chris Buescher,1,https://www.nascar.com/drivers/chris-buescher,13,9
+18,2023-03-13 13:00:54.678798,2023-03-13 14:11:58.493114,Austin Dillon,1,https://www.nascar.com/drivers/austin-dillon,14,3
+19,2023-03-13 13:00:54.686798,2023-03-13 14:12:54.848111,Martin Truex Jr.,1,https://www.nascar.com/drivers/martin-truex-jr,15,2
+20,2023-03-13 13:00:54.695800,2023-03-13 14:14:12.547627,Brad Keselowski,1,https://www.nascar.com/drivers/brad-keselowski,16,9
+21,2023-03-13 13:00:54.703796,2023-03-13 14:16:09.842178,Ricky Stenhouse Jr.,1,https://www.nascar.com/drivers/ricky-stenhouse-jr,17,10
+22,2023-03-13 13:00:54.711797,2023-03-13 14:18:56.073437,AJ Allmendinger,1,https://www.nascar.com/drivers/aj-allmendinger,18,11
+23,2023-03-13 13:00:54.719796,2023-03-13 14:20:54.132795,Erik Jones,1,https://www.nascar.com/drivers/erik-jones,19,12
+24,2023-03-13 13:00:54.727796,2023-03-13 14:27:12.325112,Daniel Suarez,1,https://www.nascar.com/drivers/daniel-suarez,20,13
+25,2023-03-13 13:00:54.735796,2023-03-13 14:30:09.549620,Denny Hamlin,1,https://www.nascar.com/drivers/denny-hamlin,21,2
+26,2023-03-13 13:00:54.743800,2023-03-13 14:31:26.815694,Ross Chastain,1,https://www.nascar.com/drivers/ross-chastain,22,13
+27,2023-03-13 13:00:54.751799,2023-03-13 14:33:35.514625,Austin Cindric,1,https://www.nascar.com/drivers/austin-cindric,23,1
+28,2023-03-13 13:00:54.760307,2023-03-13 14:36:32.838855,Corey LaJoie,1,https://www.nascar.com/drivers/corey-lajoie,24,14
+29,2023-03-13 13:00:54.768307,2023-03-13 14:37:32.318111,Justin Haley,1,https://www.nascar.com/drivers/justin-haley,25,11
+30,2023-03-13 13:00:54.776308,2023-03-13 14:38:19.373621,Ty Gibbs,1,https://www.nascar.com/drivers/ty-gibbs,26,2
+31,2023-03-13 13:00:54.784307,2023-03-13 14:39:10.122112,Noah Gragson,1,https://www.nascar.com/drivers/noah-gragson,27,12
+32,2023-03-13 13:00:54.792307,2023-03-13 14:40:16.910390,Ty Dillon,1,https://www.nascar.com/drivers/ty-dillon,28,14
+33,2023-03-13 13:00:54.800307,2023-03-13 14:42:13.690119,Zane Smith,1,https://www.nascar.com/racing-teams/front-row-motorsports/,6,15
+34,2023-03-13 13:00:54.808307,2023-03-13 14:43:12.494613,Todd Gilliland,1,https://www.nascar.com/drivers/todd-gilliland,29,15
+35,2023-03-13 13:00:54.817308,2023-03-13 14:44:02.700295,Aric Almirola,1,https://www.nascar.com/drivers/aric-almirola,30,6
+36,2023-03-13 13:00:54.825307,2023-03-13 14:45:52.779897,Cody Ware,1,https://www.nascar.com/drivers/cody-ware,31,16
+37,2023-03-13 13:00:54.833306,2023-03-13 14:47:43.315116,Harrison Burton,1,https://www.nascar.com/drivers/harrison-burton,32,17
+38,2023-03-13 13:00:54.841307,2023-03-13 14:49:06.700621,B.J. McLeod,1,https://www.nascar.com/drivers/bj-mcleod,33,18
+39,2023-03-13 13:33:54.894119,2023-03-13 13:33:54.894119,J.J. Yeley,1,NULL,NULL,NULL
+40,2023-03-13 15:12:57.119445,2023-03-13 15:14:38.638114,Chase Elliott,1,https://www.nascar.com/drivers/chase-elliott,5,4
+41,2023-03-13 15:19:10.068098,2023-03-13 15:22:43.829624,Riley Herbst,1,https://www.nascar.com/drivers/riley-herbst/,6,6
+42,2023-03-13 15:19:10.082833,2023-03-13 15:19:10.082833,Travis Pastrana,1,NULL,NULL,NULL
+43,2023-03-13 15:19:10.229411,2023-03-13 15:19:10.229411,Conor Daly,1,NULL,NULL,NULL
+44,2023-03-13 15:19:10.254139,2023-03-13 15:19:10.254139,Jimmie Johnson,1,NULL,NULL,NULL
+45,2023-03-13 15:19:10.270661,2023-03-13 15:19:10.270661,Chandler Smith,1,NULL,NULL,NULL

@@ -1,0 +1,19 @@
+id,createdAt,name,user_id,web_site,updatedAt
+1,2023-03-09 09:45:33.859478,Team Penske,1,https://www.teampenske.com/,2023-03-13 14:34:30.407625
+2,2023-03-09 09:45:10.494902,Joe Gibbs Racing,1,https://www.joegibbsracing.com/,2023-03-13 13:58:20.283075
+3,2023-03-09 09:44:46.167851,Richard Childress Racing,1,https://www.rcrracing.com/,2023-03-13 14:11:20.810622
+4,2023-03-09 09:41:36.134834,Hendrick Motorsports,1,https://www.hendrickmotorsports.com/,2023-03-06 15:57:32.204825
+5,2023-03-13 13:48:41.469134,23XI Racing,1,https://www.23xiracing.com/,2023-03-13 13:48:41.469134
+6,2023-03-13 13:53:09.640116,Stewart-Haas Racing,1,https://www.stewarthaasracing.com/,2023-03-13 13:53:09.640116
+7,2023-03-13 14:04:52.957118,None,1,http://moose46.pythonanywhere.com,2023-03-13 14:04:52.957118
+8,2023-03-13 14:07:05.724114,JR Motorsports,1,https://www.jrmracing.com/,2023-03-13 14:07:05.724114
+9,2023-03-13 14:09:00.509176,RFK Racing,1,https://www.rfkracing.com/,2023-03-13 14:09:00.509176
+10,2023-03-13 14:15:10.991625,JTG Daugherty Racing,1,https://jtgdaughertyracing.com/,2023-03-13 14:15:10.991625
+11,2023-03-13 14:17:53.637675,Kaulig Racing,1,https://www.kauligracing.com/,2023-03-13 14:17:53.637675
+12,2023-03-13 14:19:54.105002,Legacy Motor Club,1,https://legacymotorclub.com/,2023-03-13 14:19:54.105002
+13,2023-03-13 14:21:43.868933,Trackhouse Racing Team,1,https://www.trackhouse.com/,2023-03-13 14:21:43.868933
+14,2023-03-13 14:35:41.541625,Spire Motorsports,1,https://www.spire-motorsports.com/,2023-03-13 14:35:41.541625
+15,2023-03-13 14:41:33.582113,Front Row Motorsports,1,https://www.nascar.com/racing-teams/front-row-motorsports/,2023-03-13 14:41:33.582113
+16,2023-03-13 14:45:08.565121,Rick Ware Racing,1,https://www.facebook.com/rickwareracing/,2023-03-13 14:45:08.565121
+17,2023-03-13 14:47:03.062620,Wood Brothers Racing,1,https://www.woodbrothersracing.com/,2023-03-13 14:47:03.062620
+18,2023-03-13 14:48:24.376629,Live Fast Motorsports,1,https://teamlivefast.com/,2023-03-13 14:48:24.376629

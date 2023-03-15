@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS www_person;
+CREATE TABLE "www_person" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "createdAt" datetime NULL, "name" varchar(32) NOT NULL, "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED, "updatedAt" datetime NULL);
+INSERT INTO www_person(id,createdAt,name,user_id,updatedAt) VALUES('1','2023-03-06 16:11:13.709616','Greg','1','2023-03-06 16:11:13.709616'),('2','2023-03-06 16:11:19.179895','Bob','1','2023-03-06 16:11:19.179895');

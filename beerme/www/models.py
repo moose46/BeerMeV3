@@ -46,7 +46,7 @@ class Track(Base):
         return format_html(
             '<a style="color: green"; target="blank_" href={}>{}</a>',
             self.web_site,
-            self.web_site,
+            self.name,
         )
 
     def __str__(self) -> str:
@@ -121,6 +121,8 @@ class Race(Base):
     web_site = models.URLField(max_length=128, null=True, unique=True)
     nascar_web_site = models.URLField(max_length=128, null=True, unique=True)
 
+    # https://www.espn.com/racing/raceresults/_/series/sprint/raceId/202207100029
+    # https://www.espn.com/racing/raceresults/_/series/sprint/raceId/202207034002
     @admin.display
     def track_name(self):
         # race_completed = Race.objects.filter(id=self.track_id.id)
@@ -165,6 +167,26 @@ class Race(Base):
 
     class Meta:
         ordering = ["race_date"]
+
+
+class HistoricalData(Base):
+    track_id = models.ForeignKey(Track, on_delete=models.CASCADE)
+    name = models.CharField(max_length=256)
+    url = models.URLField(max_length=256)
+
+    @admin.display(description="Web Site")
+    def www_link(self):
+        return format_html(
+            '<a style="color: red"; target="blank_" href={}>{}</a>',
+            self.url,
+            self.name,
+        )
+
+    class Meta:
+        unique_together = ("name", "url")
+
+    def __str__(self) -> str:
+        return self.name
 
 
 # https://docs.djangoproject.com/en/dev/ref/models/options/#unique-together

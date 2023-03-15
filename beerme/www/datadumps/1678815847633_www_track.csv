@@ -1,0 +1,28 @@
+id,createdAt,name,user_id,web_site,updatedAt
+1,2023-03-09 09:59:37.761237,Daytona International Speedway,1,https://www.daytonainternationalspeedway.com/,2023-03-06 16:00:11.449641
+2,2023-03-09 16:16:35.316131,Las Vegas Motor Speedway,1,https://www.lvms.com/,2023-03-06 16:00:31.139766
+3,2023-03-09 16:17:22.649522,Auto Club Speedway,1,https://www.autoclubspeedway.com/,2023-03-06 16:01:32.633494
+4,2023-03-09 10:03:55.441930,Phoenix Raceway,1,https://www.phoenixraceway.com/,2023-03-07 01:59:11.065238
+5,2023-03-09 16:15:46.866129,Atlanta Motor Speedway,1,https://www.atlantamotorspeedway.com/,2023-03-07 02:00:24.753474
+6,2023-03-09 20:41:23.678732,Circuit Of The Americas,1,https://circuitoftheamericas.com/,2023-03-07 02:01:25.985597
+7,2023-03-09 20:45:02.004492,Richmond Raceway,1,https://www.richmondraceway.com/,2023-03-07 02:02:03.148222
+8,2023-03-09 20:46:23.935792,Bristol Motor Speedway,1,https://www.bristolmotorspeedway.com/,2023-03-07 02:02:53.255137
+9,2023-03-09 20:49:59.034291,Martinsville Speedway,1,https://www.martinsvillespeedway.com/,2023-03-07 02:03:28.141994
+10,2023-03-09 20:50:46.286722,Talladega Superspeedway,1,https://www.talladegasuperspeedway.com/,2023-03-07 02:04:51.870215
+11,2023-03-09 20:58:02.002361,Dover International Speedway,1,https://www.dovermotorspeedway.com/,2023-03-07 02:08:03.943560
+12,2023-03-09 21:00:01.587593,Kansas Speedway,1,https://www.kansasspeedway.com/,2023-03-07 02:08:42.952423
+13,2023-03-09 20:57:00.617072,Darlington Raceway,1,https://www.darlingtonraceway.com/,2023-03-07 02:09:38.276274
+14,2023-03-09 21:02:19.169312,North Wilkesboro Speedway,1,https://www.northwilkesborospeedway.com/,2023-03-07 02:10:12.530847
+15,2023-03-09 20:51:34.222602,Charlotte Motor Speedway,1,https://www.charlottemotorspeedway.com/,2023-03-07 02:11:09.738870
+16,2023-03-09 21:04:14.423010,World Wide Technology Raceway,1,https://wwtraceway.com/,2023-03-07 02:11:42.236766
+17,2023-03-09 21:07:59.821823,Sonoma Raceway,1,https://www.sonomaraceway.com/,2023-03-07 02:12:28.653460
+18,2023-03-09 21:06:14.964709,Nashville Superspeedway,1,https://www.nashvillesuperspeedway.com/,2023-03-07 02:13:11.040469
+19,2023-03-09 20:56:05.438551,Chicago Street Course,1,https://www.nascarchicago.com/,2023-03-07 02:14:29.637353
+20,2023-03-09 21:06:54.969414,New Hampshire Motor Speedway,1,https://www.nhms.com/,2023-03-07 02:16:04.213405
+21,2023-03-09 21:09:04.149275,Pocono Raceway,1,https://www.poconoraceway.com/,2023-03-07 02:16:40.797357
+22,2023-03-09 21:03:09.600220,Michigan International Speedway,1,https://www.mispeedway.com/,2023-03-07 02:18:11.699333
+23,2023-03-09 21:01:07.507920,Indianapolis Motor Speedway Road,1,https://www.indianapolismotorspeedway.com/,2023-03-07 02:18:46.804273
+24,2023-03-09 21:11:32.067501,Watkins Glen International,1,https://www.theglen.com/,2023-03-07 02:19:22.442970
+25,2023-03-09 21:09:55.150125,Texas Motor Speedway,1,https://www.texasmotorspeedway.com/,2023-03-07 02:23:58.597957
+26,2023-03-07 02:25:42.689128,Charlotte Motor Speedway Road Co,1,NULL,2023-03-07 02:25:42.689128
+27,2023-03-09 20:59:00.117292,Homestead-Miami Speedway,1,https://www.homesteadmiamispeedway.com/,2023-03-07 02:26:51.372883
